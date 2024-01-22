@@ -1,3 +1,6 @@
+//code by FazzRqy
+//Please those who are experienced in JavaScript to help me so that I am more proficient in the JavaScript programming language 
+
 let x,y;
 
 do {
@@ -5,7 +8,7 @@ do {
 } while (isNaN(x));
 
 do {
-    y = prompt('input numero y n= ');
+    y = prompt('input numero y = ');
 } while (isNaN(y));
 
 let operation = prompt('Input operation (*, /, +, -) = ');
