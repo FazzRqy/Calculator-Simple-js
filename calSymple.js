@@ -1,17 +1,18 @@
 //code by FazzRqy
 //Please those who are experienced in JavaScript to help me so that I am more proficient in the JavaScript programming language 
-
+const readline = require('readline-sync');
+function ask() {
 let x,y;
 
 do {
-    x = prompt('input numero x = ');
+    x = readline.question('input numero x = ');
 } while (isNaN(x));
 
 do {
-    y = prompt('input numero y = ');
+    y = readline.question('input numero y = ');
 } while (isNaN(y));
 
-let operation = prompt('Input operation (*, /, +, -) = ');
+let operation = readline.question('Input operation (*, /, +, -) = ');
 
 let result;
         
@@ -34,22 +35,23 @@ switch (operation) {
     break;
     
     default:
-    alert('error \n \n[END SCRIPT]')
+    console.log('error \n \n[END SCRIPT]')
       return;
 }
 
-let conf = prompt(` u numero x is = ${x}\n u operation is = ${operation}\n and u numero y is = ${y}\n it's true? (y/n) = `);
+let conf = readline.question(` u numero x is = ${x}\n u operation is = ${operation}\n and u numero y is = ${y}\n it's true? (y/n) = `);
 
 switch (conf) {
     case 'y':
-        alert(`u result is = ${result}\n \n[END SCRIPT]`);
+        console.log(`u result is = ${result}\n \n[END SCRIPT]`);
     break;
     
     case 'n':
-        alert('[END SCRIPT]');
+        console.log('[END SCRIPT]');
     break;
     
     default:
-     alert('error\n \n[END SCRIPT]');
+     console.log('error\n \n[END SCRIPT]');
      return;
 };
+}
