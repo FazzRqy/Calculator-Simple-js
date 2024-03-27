@@ -38,20 +38,6 @@ switch (operation) {
     console.log('error \n \n[END SCRIPT]')
       return;
 }
-
-let conf = readline.question(` u numero x is = ${x}\n u operation is = ${operation}\n and u numero y is = ${y}\n it's true? (y/n) = `);
-
-switch (conf) {
-    case 'y':
-        console.log(`u result is = ${result}\n \n[END SCRIPT]`);
-    break;
-    
-    case 'n':
-        console.log('[END SCRIPT]');
-    break;
-    
-    default:
-     console.log('error\n \n[END SCRIPT]');
-     return;
+console.log(x + operation + y + '=' + result)
 };
-}
+ask()
